@@ -46,6 +46,7 @@ $query = $db->query("SELECT * FROM users LIMIT $limit");
             height: 100vh;
             width: 100vw;
             overflow: hidden;
+            background-color: #FAFAFA;
         }
 
         .review-pagination {
@@ -57,21 +58,41 @@ $query = $db->query("SELECT * FROM users LIMIT $limit");
         }
 
         .review-pagination .current {
-            background-color: blue;
-            border: 1px solid grey;
-            padding: 5px 10px;
-            color: black;
-        }
-     
-        .review-pagination .pagination-link {
-            background-color: red;
-            border: 1px solid grey;
-            padding: 5px 10px;
-            text-decoration: none;
-            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            min-width: 30px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            margin: 0;
+            white-space: nowrap;
+            background: #FFF;
+            color: #EC1F24;
+            font-weight: 400;
         }
 
-    
+        .review-pagination .pagination-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            min-width: 30px;
+            width: auto;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 0;
+            white-space: nowrap;
+            background: #FFF;
+            color: #777;
+        }
+
+        .review-pagination .first-last {
+            padding: 0 5px;
+            color: #777;
+        }
     </style>
 
     <style>
